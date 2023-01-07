@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Cadastrinho{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/cadastro.css') }}">
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index">Pagina Inicial</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="cadastro.html">Cadastrar</a></li>
+                <li><a href="listar.html">Listar</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<center>
+<div class="page-header">
+    <h1>Cadastre seu Produto</h1>    
+</div>
+</center> 
+
+<form action = "{{ url_for('addrec') }}" method = "POST">
+    <h3>Student Information</h3>
+    Name<br>
+    <input type = "text" name = "nm" /></br>
+    
+    Address<br>
+    <textarea name = "add" ></textarea><br>
+    
+    City<br>
+    <input type = "text" name = "city" /><br>
+    
+    PINCODE<br>
+    <input type = "text" name = "pin" /><br>
+    <input type = "submit" value = "submit" /><br>
+ </form>
+
+
+{% endblock %}
+

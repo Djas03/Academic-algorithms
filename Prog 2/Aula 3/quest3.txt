@@ -1,0 +1,16 @@
+3.Explique o que est´a acontecendo no c´odigo abaixo? Quais as semelhan¸cas e as diferen¸cas entre os
+ponteiros r,q e r2,q2 no programa?
+
+int *q = new int(42); // declaração do poteiro inteiro "q" e iniciando com 42.
+int *r = new int(100); // declaração do poteiro inteiro "r" e iniciando com 100.
+r = q; // atribuindo "q" à "r".
+auto q2 = make_shared<int>(42); // declarando "q2" como um ponteiro inteligente inteiro e iniciando com 42.
+auto r2 = make_shared<int>(100); // declarando "r2" como um ponteiro inteligente inteiro e iniciando com 100.
+r2 = q2; // atribuindo "q2" à "r2".
+
+Semelhanças:
+Todos os ponteiros terminaram com valor 100.
+
+Diferenças: 
+q e r são ponteiros normais.
+q2 e r2 são ponteiros inteligentes.

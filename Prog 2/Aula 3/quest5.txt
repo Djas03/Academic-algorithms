@@ -1,0 +1,6 @@
+5. A forma de atribui¸c˜ao abaixo demonstrada est´a correta? O que acontece no programa quando ela
+´e utilizada? Se incorreta, como poderia ser corrigida?
+shared_ptr<int> p(new int(42));
+auto c = shared_ptr<int>(p.get());
+
+Sim, foi testada e está correta.

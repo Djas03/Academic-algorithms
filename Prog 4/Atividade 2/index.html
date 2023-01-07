@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+</head>
+<body  style="background-color: hotpink">
+    <form action="http://www.example.com" method="post">
+        <fieldset>
+            <legend>Formulário de Cadastro</legend>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Nome Completo <br />                
+                <input type = "text" name="username" size = "50"/></label><br />
+                <label>Email <br />
+                <input type = "email" name = "email" /> </label> 
+                <label>Data de Nascimento <input type = "date" name = "data" /></label><br />
+                <label>Cidade <br />
+                <input type = "text" name = "locate" /> </label> 
+                <label>Estado <select name = "devices">
+                    <option value =""></option>
+                    <option value ="ac">AC</option>
+                    <option value = "al">AL</option>
+                    <option value = "ap">AP</option>
+                    <option value = "am">AM</option>
+                    <option value = "ba">BA</option>
+                    <option value = "ce">CE</option>
+                    <option value = "es">ES</option>
+                    <option value = "go">GO</option>
+                    <option value = "ma">MA</option>
+                    <option value = "mt">MT</option>
+                    <option value = "ms">MS</option>
+                    <option value = "mg">MG</option>
+                    <option value = "pa">PA</option>
+                    <option value = "pb">PB</option>
+                    <option value = "pr">PR</option>
+                    <option value = "pe">PE</option>
+                    <option value = "pi">PI</option>
+                    <option value = "rj">RJ</option>
+                    <option value = "rn">RN</option>
+                    <option value = "rs">RS</option>
+                    <option value = "ro">RO</option>
+                    <option value = "rr">RR</option>
+                    <option value = "sc">SC</option>
+                    <option value = "sp">SP</option>
+                    <option value = "se">SE</option>
+                    <option value = "to">TO</option>
+                    <option value = "df">DF</option>
+
+                </select> </label>
+                <label> Sexo
+                    <input type = "radio" name = "sexo" />Masc.
+                    <input type = "radio" name = "sexo" />Fem.
+
+                </label><br />  
+                
+            </fieldset>
+            <br />
+            <br />
+            <fieldset>
+            <legend>Informações acadêmicas</legend>
+            <label>RGA
+                <input type="text" name = "id" required="required"/>
+            </label><br /><br />
+            <label>Disciplina do curso já realizada (se aprovado) <br />
+                <input type="checkbox" name="curso1" value="estrutura de dados 1" />Estrutura de Dados 1
+                <input type="checkbox" name="curso2" value="estrutura de dados 2" />Estrutura de Dados 2
+                <input type="checkbox" name="curso3" value="programação 2" />Programação 2
+                <input type="checkbox" name="curso4" value="programação 3" />Programação 3
+            </label><br /><br />
+
+            <label>Horários reservados para aulas síncronas:</label>
+            <table border = 1>
+                <thead>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th>Seg</th>
+                        <th>Ter</th>
+                        <th>Qua</th>
+                        <th>Qui</th>
+                        <th>Sex</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td colspan="2">07:30 às 09:30</td>
+                    <td><input type="checkbox" name="seg1" value="seg1" /></td>
+                    <td><input type="checkbox" name="ter1" value="ter1" /></td>
+                    <td><input type="checkbox" name="qua1" value="qua1" /></td>
+                    <td><input type="checkbox" name="qui1" value="qui1" /></td>
+                    <td><input type="checkbox" name="sex1" value="sex1" /></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">09:30 às 11:30</td>
+                    <td><input type="checkbox" name="seg2" value="seg2" /></td>
+                    <td><input type="checkbox" name="ter2" value="ter2" /></td>
+                    <td><input type="checkbox" name="qua2" value="qua2" /></td>
+                    <td><input type="checkbox" name="quin2" value="qui2" /></td>
+                    <td><input type="checkbox" name="sex2" value="sex2" /></td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">13:30 às 15:30</td>
+                    <td><input type="checkbox" name="seg3" value="seg3" /></td>
+                    <td><input type="checkbox" name="ter3" value="ter3" /></td>
+                    <td><input type="checkbox" name="qua3" value="qua3" /></td>
+                    <td><input type="checkbox" name="qui3" value="qui3" /></td>
+                    <td><input type="checkbox" name="sex3" value="sex3" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">15:30 às 17:30</td>
+                    <td><input type="checkbox" name="seg4" value="seg4" /></td>
+                    <td><input type="checkbox" name="ter4" value="ter4" /></td>
+                    <td><input type="checkbox" name="qua4" value="qua4" /></td>
+                    <td><input type="checkbox" name="qui4" value="qui4" /></td>
+                    <td><input type="checkbox" name="sex4" value="sex4" /></td>
+                </tr>
+            </table>
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpar"/>
+
+
+    </form>
+</body>

@@ -1,0 +1,3 @@
+Troquei de computador e nele não esta rodando o flask mas o script funciona normalmente. Usei o Live Server pra testar e funcionou,
+pode ser problema no meu python mas é provavelmente ainda roda em flask também. Sobre a api gerou muitos conflitos com o flask e não
+funcionou, por isso optei pelo uso do javaScript para fazer os requerimentos.

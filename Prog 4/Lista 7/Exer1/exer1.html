@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="script-ex1.js"></script>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+        function mensagem(){
+            alert("Olá");
+            return function(){
+                alert("Tudo bem?")
+            };
+
+        }
+
+        const fun = mensagem()();
+        
+     
+    </script>
+  </body>
+</html>

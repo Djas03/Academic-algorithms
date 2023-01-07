@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% extends "bootstrap/base.html" %}
+{% block title %}Facebook 2 - Marktplace{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index">Pagina Inicial</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="cadastro">Cadastrar</a></li>
+                <li><a href="list">Listar</a></li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+<center>
+<h1>Bem vindo ao Marketplace do Facebook 2</h1>
+</center>
+{% endblock %}
+
+
+
+</html>

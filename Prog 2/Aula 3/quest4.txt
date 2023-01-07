@@ -1,0 +1,10 @@
+4. Dada a seguinte fun¸c˜ao e sua respectiva utiliza¸c˜ao:
+void process(shared_ptr<int> ptr){/* ... */}
+//...
+shared_ptr<int> p(new int(42));
+process(shared_ptr<int>(p));
+Estaria a chamada para a fun¸c˜ao correta? Caso n˜ao, como ela poderia ser corrigida?
+Não, a maneira correta seria:
+shared_ptr<int> process(shared_ptr<int> ptr){/* ... */}
+shared_ptr<int> p(new int(42));
+process(shared_ptr<int>(p));

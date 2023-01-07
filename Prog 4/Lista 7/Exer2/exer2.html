@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="script-ex1.js"></script>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+
+    let nome =window.prompt ("Digite o seu nome: ")
+    let num = window.prompt("Escolha um número: ")
+
+    function mensagem(x){
+        if (x == 1)
+            return("Seja bem vindo ");
+            else if(x == 0){
+                return("Tente novamente ")    
+        };
+    }
+    function fun1(f,n,nome){
+        alert(f(n) + nome);
+
+    }
+    fun1(mensagem, num, nome)
+        
+     
+    </script>
+  </body>
+</html>

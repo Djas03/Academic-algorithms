@@ -1,0 +1,13 @@
+{% extends "bootstrap/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Cadastrinho{% endblock %}
+{% block content %}
+
+<center>
+<div class="page-header">
+    <h1>Cadastrinho Boy</h1>
+    <h1> Hello, {%if name %} {{name}}{%else%}Stranger{%endif%}!</h1>
+</div>
+</center>
+{{wtf.quick_form(form)}}
+{% endblock %}
